@@ -1,0 +1,42 @@
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.skinlesionanalyser.MapsActivity"
+        android:layout_alignParentStart="true"
+       />
+
+    <Button
+        android:id="@+id/B_hopistals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:layout_above="@+id/back"
+        android:onClick="onClick"
+        android:text="Get the Results"
+        android:backgroundTint="#F05757"
+        android:textColor="#ffffff"/>
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:onClick="onClick"
+        android:text="Go Back"
+        android:backgroundTint="#F05757"
+        android:textColor="#ffffff"/>
+
+</RelativeLayout>
